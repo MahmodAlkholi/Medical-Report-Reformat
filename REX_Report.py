@@ -113,7 +113,7 @@ st.write("Upload an image or PDF of a medical report, and we will reformat it pr
 # Initialize extracted text variables
 extracted_text_image = ""
 extracted_text_pdf = ""
-pytesseract.pytesseract.tesseract_cmd = "pytesseract"
+#pytesseract.pytesseract.tesseract_cmd = "pytesseract"
 # Upload image
 uploaded_image = st.file_uploader("Upload an image...", type=["jpg", "jpeg", "png"])
 
@@ -122,12 +122,12 @@ if uploaded_image is not None:
     image = Image.open(uploaded_image)
     st.image(image, caption="Uploaded Image", use_column_width=True)
 
-    # Extract text using Tesseract OCR
-    with st.spinner("Extracting text from the image..."):
-        extracted_text_image = pytesseract.image_to_string(image)
+    # # Extract text using Tesseract OCR
+    # with st.spinner("Extracting text from the image..."):
+    #     extracted_text_image = pytesseract.image_to_string(image)
 
-    st.subheader("Extracted Text from Image")
-    st.write(extracted_text_image)
+    # st.subheader("Extracted Text from Image")
+    # st.write(extracted_text_image)
 
 # Upload PDF
 uploaded_pdf = st.file_uploader("Upload a PDF...", type=["pdf"])
