@@ -1,7 +1,8 @@
 
 streamlit
 pdfplumber
-pytesseract
+tesseract-ocr
+tesseract-ocr-por
 Pillow
 PyMuPDF
 openai==0.28
