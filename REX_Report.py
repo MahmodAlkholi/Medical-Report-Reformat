@@ -113,7 +113,7 @@ st.write("Upload an image or PDF of a medical report, and we will reformat it pr
 # Initialize extracted text variables
 extracted_text_image = ""
 extracted_text_pdf = ""
-
+pytesseract.pytesseract.tesseract_cmd =
 # Upload image
 uploaded_image = st.file_uploader("Upload an image...", type=["jpg", "jpeg", "png"])
 
