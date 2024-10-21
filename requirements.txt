@@ -1,7 +1,7 @@
-sudo apt install tesseract-ocr;
+
 streamlit
 pdfplumber
-pytesseract-ocr
+
 Pillow
 PyMuPDF
 openai==0.28
