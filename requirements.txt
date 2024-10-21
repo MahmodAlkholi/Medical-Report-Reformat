@@ -1,3 +1,4 @@
+# Ubuntu: sudo apt install tesseract-ocr
 streamlit
 pdfplumber
 pytesseract-ocr
