@@ -98,7 +98,7 @@ import streamlit as st
 from dotenv import load_dotenv
 import os
 from PIL import Image
-import pytesseract
+# import pytesseract
 import openai
 import fitz  # PyMuPDF
 
